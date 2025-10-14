@@ -1,0 +1,28 @@
+@MyApiApp_HostAddress = http://localhost:5227
+
+### 🔍 GET car by ID
+GET {{MyApiApp_HostAddress}}/api/car/1
+Accept: application/json
+
+###
+
+### ➕ POST new car
+POST {{MyApiApp_HostAddress}}/api/car
+Content-Type: application/json
+
+{
+  "model": "Toyota Corolla",
+  "year": 2023
+}
+
+###
+
+### ✏️ PUT update existing car
+PUT {{MyApiApp_HostAddress}}/api/car/1
+Content-Type: application/json
+
+{
+  "model": "Updated Model X",
+  "year": 2025
+}
+
